@@ -8,12 +8,7 @@ body{
     line-height:1.5;
 }
 
-h1{font-size:48px;font-family:"Arial Bold", "Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}
-h2{font-size:30px;font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}
-h3{font-size:24px;font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}
-h4{font-size:20px;font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}
-h5{font-size:18px;font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}
-h6{font-size:16px;font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}
+h1{font-size:20px;font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}
 
 
 header{width:95%}
