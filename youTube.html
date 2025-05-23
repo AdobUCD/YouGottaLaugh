@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>You Gotta Laugh</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="style/yglBlue.css">
+</head>
+<body>
+
+
+<!-- Header -->
+<header class="ygl-container ygl-theme" id="myHeader">
+  <div class="ygl-align-center">
+      <img src="images/logo.png" width="240" height="180" alt="You Gotta Laugh Logo">
+      <h4 id="headerTitle" class="ygl-xxlarge ygl-animate-bottom">COMEDIANS YOUTUBE VIDEO</h4>
+  </div>
+</header>
+<nav>
+   <ul>
+     <li><a class="expand-button" href="comedians.html">Back</a></li>
+   </ul>
+</nav>
+
+
+
+<div class="flex-container video-container">
+    <iframe id="videoFrame"
+        title="YouTube video player" 
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+</div>
+
+<script>
+    // Get the video URL from the query parameter
+    const params = new URLSearchParams(window.location.search);
+    const videoUrl = params.get("video");
+    const videoTitle = params.get("title");
+
+    if (videoUrl) {
+      document.getElementById("videoFrame").src = videoUrl;
+    } else {
+      document.body.innerHTML += "<p>No video URL provided.</p>";
+    }
+
+    if (videoTitle) {
+      document.getElementById("headerTitle").textContent = videoTitle;
+    }
+  </script>
+
+<!-- Footer -->
+<footer class="ygl-container ygl-dark ygl-padding-16">
+  <div class="ygl-align-center">
+    <span class="ygl-float-left">
+      <a href="comedians.html" class="ygl-text-white expand-button"><span class="ygl-text ygl-light ygl-padding">Back</span></a>
+    </span>
+    <span class="ygl-float-right">
+      <a href="#" class="ygl-text-white expand-button "><span class="ygl-text ygl-light ygl-padding">Go To Top</span></a>
+    </span>
+    <p>Copyright &copy; Denis O'Brien 2025</p>
+  </div>
+</footer>
+
+
+</body>
+</html>
